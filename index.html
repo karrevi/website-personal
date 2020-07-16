@@ -125,23 +125,23 @@
     <div class="container work" id="work">
         <h1>Work</h1>
         <div class="work-category">
-            <button id="designing" class="active">Web Designing</button>
-            <button id="animation">Web Animation</button>
-            <button id="project">React Projects</button>
+            <button id="designing" class="active" onclick="showRequiredCategory(this)">Web Designing</button>
+            <button id="animation" onclick="showRequiredCategory(this)">Web Animation</button>
+            <button id="project" onclick="showRequiredCategory(this)">React Projects</button>
         </div>
-        <div class="category designing showCategory">
+        <div class="category-designing showCategory">
             <a href=""><img src="img/1.png" alt=""></a>
             <a href=""><img src="img/2.png" alt=""></a>
             <a href=""><img src="img/3.png" alt=""></a>
             <a href=""><img src="img/2.png" alt=""></a>
             <a href=""><img src="img/3.png" alt=""></a>
         </div>
-        <div class="category designing hideCategory">
+        <div class="category-animation hideCategory">
             <a href=""><img src="img/1.png" alt=""></a>
             <a href=""><img src="img/2.png" alt=""></a>
             <a href=""><img src="img/3.png" alt=""></a>
         </div>
-        <div class="category designing hideCategory">
+        <div class="category-project hideCategory">
             <a href=""><img src="img/1.png" alt=""></a>
             <a href=""><img src="img/2.png" alt=""></a>
             <a href=""><img src="img/3.png" alt=""></a>
@@ -164,10 +164,6 @@
         <hr>
         <p>2020 Copyright. All Rights Reserved</p>
     </footer>
-
-
-
-
 
     <script src="js/ScrollMagic.min.js"></script>
     <script src="js/animation.gsap.min.js"></script>
