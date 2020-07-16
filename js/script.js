@@ -8,35 +8,35 @@ spans.forEach(span => span.addEventListener('mouseout', function (e) {
 
 const htmlBar = document.querySelector('.bar-html')
 const cssBar = document.querySelector('.bar-css')
-const jsbar = document.querySelector('.bar-javascript')
+const jsBar = document.querySelector('.bar-javascript')
 const reactBar = document.querySelector('.bar-react')
 
 const t1 = new TimelineLite()
 
 t1.fromTo(htmlBar, .75, {
-    width: `calc(0% - 6px)`
-}, {
-    width: `calc(90%- 6px)`,
-    ease: Power4.easeOut
-})
-fromTo(cssBar, .75, {
-    width: `calc(0% - 6px)`
-}, {
-    width: `calc(95%- 6px)`,
-    ease: Power4.easeOut
-})
-fromTo(jsBar, .75, {
-    width: `calc(0% - 6px)`
-}, {
-    width: `calc(75%- 6px)`,
-    ease: Power4.easeOut
-})
-fromTo(reactBar, .75, {
-    width: `calc(0% - 6px)`
-}, {
-    width: `calc(70%- 6px)`,
-    ease: Power4.easeOut
-})
+        width: `calc(0% - 6px)`
+    }, {
+        width: `calc(90%- 6px)`,
+        ease: Power4.easeOut
+    })
+    .fromTo(cssBar, .75, {
+        width: `calc(0% - 6px)`
+    }, {
+        width: `calc(95%- 6px)`,
+        ease: Power4.easeOut
+    })
+    .fromTo(jsBar, .75, {
+        width: `calc(0% - 6px)`
+    }, {
+        width: `calc(75%- 6px)`,
+        ease: Power4.easeOut
+    })
+    .fromTo(reactBar, .75, {
+        width: `calc(0% - 6px)`
+    }, {
+        width: `calc(70%- 6px)`,
+        ease: Power4.easeOut
+    })
 
 const contoller = new ScrollMagic.Controller()
 const scene = new ScrollMagic.Scene({
@@ -57,7 +57,7 @@ const showRequiredCategory = event => {
 
     event.classList.add('active')
     const getCategory = document.querySelector(`.category-${getId}`)
-    const categories = document.querySelectorAll('div[class^= "category-"]')
+    const categories = document.querySelectorAll(`div[class ^= "category-"]`)
     for (i = 0; i < categories.length; i++) {
         if (categories[i].hasAttribute('class')) {
             categories[i].classList.remove('showCategory')
