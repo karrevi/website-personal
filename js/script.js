@@ -1,4 +1,10 @@
+const htmlBar = document.querySelector('.bar-html')
+const cssBar = document.querySelector('.bar-css')
+const jsBar = document.querySelector('.bar-javascript')
+const reactBar = document.querySelector('.bar-react')
 const spans = document.querySelectorAll('h1 span')
+let progress = document.getElementById('progressbar');
+
 spans.forEach(span => span.addEventListener('mouseover', function (e) {
     span.classList.add('animated', 'rubberBand')
 }))
@@ -6,13 +12,7 @@ spans.forEach(span => span.addEventListener('mouseout', function (e) {
     span.classList.remove('animated', 'rubberBand')
 }))
 
-const htmlBar = document.querySelector('.bar-html')
-const cssBar = document.querySelector('.bar-css')
-const jsBar = document.querySelector('.bar-javascript')
-const reactBar = document.querySelector('.bar-react')
-
 const t1 = gsap.timeline()
-
 t1.fromTo(htmlBar, .75, {
         width: `calc(0% - 6px)`
     }, {
@@ -38,13 +38,13 @@ t1.fromTo(htmlBar, .75, {
         ease: Power4.easeOut
     })
 
-const contoller = new ScrollMagic.Controller()
+const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({
         triggerElement: '.skills',
-        triggerHook: 0
+        triggerHook: 1
     })
     .setTween(t1)
-    .addTo(contoller)
+    .addTo(controller)
 
 const showRequiredCategory = event => {
     const getId = event.id
@@ -66,4 +66,10 @@ const showRequiredCategory = event => {
     }
     getCategory.classList.remove('hideCategory')
     getCategory.classList.add('showCategory')
+}
+
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function () {
+    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    progress.style.height = progressHeight + "%";
 }
