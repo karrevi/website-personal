@@ -11,7 +11,7 @@ const cssBar = document.querySelector('.bar-css')
 const jsBar = document.querySelector('.bar-javascript')
 const reactBar = document.querySelector('.bar-react')
 
-const t1 = new TimelineLite()
+const t1 = gsap.timeline()
 
 t1.fromTo(htmlBar, .75, {
         width: `calc(0% - 6px)`
