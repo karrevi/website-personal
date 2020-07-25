@@ -78,7 +78,7 @@ nav ul,
 }
 
 body {
-  background-color: #252627;
+  background-color: #ffffff;
 }
 
 header {
@@ -89,7 +89,7 @@ header {
 }
 
 .navbar {
-  background-color: #181818;
+  background-color: #006a71;
 }
 
 header h1,
@@ -99,7 +99,7 @@ header a,
 .skills h1,
 .work h1,
 .contact h1 {
-  color: #707070;
+  color: #5c8d89;
 }
 
 li {
@@ -126,7 +126,7 @@ a {
 }
 
 .text h1 {
-  color: #fff;
+  color: #cbeaed;
   font-size: 3rem;
   cursor: context-menu;
 }
@@ -157,8 +157,8 @@ span.m-left {
 .text a {
   padding: 12px 25px;
   background-color: none;
-  border: 3px solid #ED5565;
-  color: #ED5565;
+  border: 3px solid #d3de32;
+  color: #d3de32;
   font-size: .8rem;
   letter-spacing: 2px;
   position: relative;
@@ -174,7 +174,7 @@ span.m-left {
 
 .text a:before {
   content: '';
-  background-color: #ED5565;
+  background-color: #d3de32;
   position: absolute;
   left: 0;
   top: 0;
@@ -207,7 +207,7 @@ span.m-left {
 
 .about-me-info {
   max-width: 900px;
-  background-color: #252627;
+  background-color: #ffffdd;
   box-shadow: 0 0 1.2rem rgba(0, 0, 0, .25);
   padding: 50px;
   position: relative;
@@ -309,13 +309,13 @@ div[class^='bar-'] {
 
 .work-category button {
   text-transform: capitalize;
-  border: 3px solid #ED5565;
+  border: 3px solid #d3de32;
   padding: 15px 30px;
   border-radius: 50px;
-  color: #ED5565;
+  color: #d3de32;
   font-size: 1.1rem;
   letter-spacing: 1px;
-  background-color: #252627;
+  background-color: #ffffff;
   outline: none;
   cursor: pointer;
 }
@@ -324,7 +324,6 @@ div[class^='category-'] {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  /*  propiedad reemplazada    */
 }
 
 .work a {
@@ -334,7 +333,7 @@ div[class^='category-'] {
 }
 
 .work-category .active {
-  background-color: #ED5565;
+  background-color: #d3de32;
 }
 
 button.active {
@@ -363,12 +362,12 @@ form textarea {
   display: block;
   width: 500px;
   padding: 20px;
-  background-color: #252627;
-  border: 3px solid #707070;
+  background-color: #ffffff;
+  border: 3px solid #006a71;
   margin: 20px 0;
   outline: none;
   font-size: 1.2rem;
-  color: #fff;
+  color: #006a71;
   position: relative;
   left: 50%;
   right: 50%;
@@ -377,19 +376,79 @@ form textarea {
 
 form input:last-child {
   width: 150px;
-  background-color: #ED5565;
+  background-color: #d3de32;
   border: none;
   cursor: pointer;
 }
 
 footer hr {
-  border: 2px solid #707070;
+  border: 2px solid #006a71;
   margin-top: 80px;
 }
 
-footer p {
+/* footer p {
   text-align: center;
   color: #707070;
   font-size: 1.2rem;
   padding: 30px 0;
+} */
+
+.social-container {
+  width: 400px;
+  margin: 10vh auto;
+  text-align: center
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: .15em;
+  position: relative;
+  font-size: 1.2em
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 265ms ease-out
+}
+
+.social-icons a {
+  display: inline-block
+}
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #00B5F5, #002A8F);
+  transition: all 265ms ease-out
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #00B5F5;
+  background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in
 }
