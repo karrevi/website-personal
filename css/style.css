@@ -386,13 +386,6 @@ footer hr {
   margin-top: 80px;
 }
 
-/* footer p {
-  text-align: center;
-  color: #707070;
-  font-size: 1.2rem;
-  padding: 30px 0;
-} */
-
 .social-container {
   width: 400px;
   margin: 10vh auto;
@@ -433,7 +426,7 @@ footer hr {
   height: 60px;
   border-radius: 100%;
   display: block;
-  background: linear-gradient(45deg, #00B5F5, #002A8F);
+  background: linear-gradient(45deg, #cbeaed, #006a71);
   transition: all 265ms ease-out
 }
 
@@ -447,7 +440,7 @@ footer hr {
   -ms-transform: scale(2.2);
   -webkit-transform: scale(2.2);
   color: #00B5F5;
-  background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
+  background: -webkit-linear-gradient(45deg, #cbeaed, #006a71);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in
