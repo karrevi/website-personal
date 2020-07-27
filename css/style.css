@@ -18,49 +18,6 @@
   background: rgba(255, 255, 255, 0.05);
 }
 
-#progressbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px;
-  background: linear-gradient(to top, #008aff, #00ffe7);
-  animation: animate 5s linear infinite;
-}
-
-@keyframes animate {
-
-  0%,
-  100% {
-    filter: hue-rotate(0deg);
-  }
-
-  50% {
-    filter: hue-rotate(360deg);
-  }
-}
-
-#progressbar::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, #008aff, #00ffe7);
-  filter: blur(30px);
-}
-
-#progressbar::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, #008aff, #00ffe7);
-  filter: blur(30px);
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -260,53 +217,6 @@ span.m-left {
   margin-bottom: 50px;
 }
 
-.html {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-div[class^='tag-'] {
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
-  width: 120px;
-  height: 30px;
-  background-color: #1785A7;
-  margin-right: 30px;
-}
-
-div[class^='tag-'] p {
-  color: #fff;
-  text-align: left;
-  padding-left: 10px;
-  font-size: 1.1rem;
-  padding-top: 3px;
-}
-
-.progressbar {
-  position: relative;
-  width: 600px;
-  height: 20px;
-  border: 2px solid #48CFAD;
-  border-radius: 20px;
-  margin-top: 7px;
-}
-
-div[class^='bar-'] {
-  position: absolute;
-  background-color: #48CFAD;
-  height: 10px;
-  border-radius: 20px;
-  margin: 2.7px;
-}
-
-.bar-html,
-.bar-css,
-.bar-javascript,
-.bar-react {
-  width: calc(0-6px);
-}
-
 .work-category button {
   text-transform: capitalize;
   border: 3px solid #d3de32;
@@ -445,4 +355,29 @@ footer hr {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in
+}
+
+.skills-circle-wrap {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 10px auto;
+  pointer-events: fill;
+  cursor: pointer;
+  -webkit-transform: perspective(900px);
+  transform: perspective(900px);
+}
+
+.skills-top-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 50px #FFEB00;
 }
