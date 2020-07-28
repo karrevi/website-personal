@@ -50,3 +50,25 @@ window.onscroll = function () {
     let progressHeight = (window.pageYOffset / totalHeight) * 100;
     progress.style.height = progressHeight + "%";
 };
+
+window.addEventListener("resize", function () {
+    sizeWidth = sliderInd[0].clientWidth;
+})
+
+setInterval(function time() {
+    slides();
+}, interval);
+
+function slides() {
+    slider.style.transform = 'translate(' + (-sizeWidth * accountant) + 'px)';
+    slider.style.transition = 'transform 1s';
+    accountant++;
+
+    if (accountant == sliderInd.length) {
+        accountant = 0;
+        setTimeout(function () {
+            slider.style.transform = 'translate(0px)';
+            slider.style.transition = 'transform 0s';
+        }, interval)
+    }
+}
