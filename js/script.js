@@ -1,5 +1,10 @@
 const spans = document.querySelectorAll('h1 span')
 let progress = document.getElementById('progressbar');
+let slider = document.querySelector('.slider-container');
+let sliderInd = document.querySelectorAll('.slider-test');
+let accountant = 1;
+let sizeWidth = sliderInd[0].clientWidth;
+let interval = 3000;
 
 spans.forEach(span => span.addEventListener('mouseover', function (e) {
     span.classList.add('animated', 'rubberBand')
