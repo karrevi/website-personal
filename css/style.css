@@ -236,6 +236,7 @@ div[class^='category-'] {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
+
 .work a {
   justify-self: center;
   position: relative;
@@ -369,7 +370,7 @@ footer hr {
   transform: perspective(900px);
 }
 
-/* Slide */
+/* Slider */
 .container-slider {
   width: 80%;
   height: 400px;
@@ -394,11 +395,10 @@ footer hr {
   flex-shrink: 0;
 }
 
-img {
-  width: 150px;
-  height: 150px;
+.skills img {
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 100%;
 }
 
 h3 {
