@@ -405,3 +405,5 @@ h3 {
   text-align: center;
   font-style: italic;
 }
+
+@media screen and (max-width: 400px) {}
