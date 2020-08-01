@@ -403,7 +403,41 @@ footer hr {
 
 h3 {
   text-align: center;
-  font-style: italic;
+  color: #5C8D89;
+  font-size: 30px;
+  font-weight: 150;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  position: relative;
+  animation: text 3s 1;
 }
 
-@media screen and (max-width: 400px) {}
+@keyframes text {
+  0% {
+    color: black;
+    margin-bottom: -40px;
+  }
+
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  nav ul,
+  .main-info-section,
+  .work-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: blue;
+  }
+}
