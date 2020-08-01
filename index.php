@@ -161,7 +161,7 @@
     </div>
     <div class="container contact" id="contact">
         <h1>Contact</h1>
-        <form>
+        <form action="https://formspree.io/xpzybdja" method="POST">
             <input type="text" name="name" placeholder="Full Name">
             <input type="email" name="email" placeholder="Email">
             <input type="email" placeholder="PortfolioPersonemail@example.com" disabled>
