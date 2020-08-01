@@ -434,7 +434,10 @@ h3 {
 
   nav ul,
   .main-info-section,
-  .work-category {
+  .work-category,
+  .header,
+  .navbar {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
