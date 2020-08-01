@@ -71,7 +71,7 @@
             <a href="#contact">contáctame</a>
         </div>
         <div class="profile-image">
-            <img src="img/profile-image2.jpg" alt="">
+            <img src="img/profile-image2.png" alt="">
         </div>
     </div>
     <div class="container about" id="about">
