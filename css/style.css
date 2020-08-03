@@ -9,15 +9,6 @@
   width: 0;
 }
 
-#scrollPath {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 100px;
-  background: rgba(255, 255, 255, 0.05);
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -148,6 +139,18 @@ span.m-left {
 .profile-image img {
   width: 450px;
   margin-top: 50px;
+}
+
+.profile-image {
+  position: relative;
+}
+
+.image-vanishing {
+  position: absolute;
+  bottom: 0;
+  height: 244px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent, white);
 }
 
 .about {
@@ -300,7 +303,7 @@ footer hr {
 
 .social-container {
   width: 400px;
-  margin: 10vh auto;
+  margin: 0 auto;
   text-align: center
 }
 
@@ -326,7 +329,10 @@ footer hr {
 }
 
 .social-icons a {
-  display: inline-block
+  display: inline-block;
+  transform: translateY(0);
+  top: unset;
+  bottom: unset;
 }
 
 .social-icons a:before {
