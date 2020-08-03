@@ -67,7 +67,7 @@ function slides() {
 }
 window.onscroll = function () {
     console.log(document.documentElement.scrollTop)
-    if (document.documentElement.scrollTop > 100) {
+    if (document.documentElement.scrollTop > 500) {
         document.querySelector('.go-top-container')
             .classList.add('show');
     } else {
