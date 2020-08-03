@@ -65,3 +65,9 @@ function slides() {
         }, interval)
     }
 }
+window.onscroll = function () {
+    console.log(document.documentElement.scrollTop)
+    if (document.documentElement.scrollTop > 100) {
+
+    }
+}
