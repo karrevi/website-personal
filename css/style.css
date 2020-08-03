@@ -423,8 +423,8 @@ h3 {
 
 .go-top-container {
   position: fixed;
-  bottom: 4rem;
-  right: 4rem;
+  bottom: -3rem;
+  right: -3rem;
   width: 6.6rem;
   height: 6.6rem;
   z-index: -1;
@@ -433,7 +433,7 @@ h3 {
 .go-top-buttom {
   width: 0rem;
   height: 0rem;
-  background: #2071b2;
+  background: #48CFAD;
   border-radius: 50%;
   cursor: pointer;
   transition: .2s;
@@ -459,8 +459,8 @@ h3 {
 
 .show .go-top-buttom {
   animation: popup .3s ease-in-out;
-  width: 6.6rem;
-  height: 6.6rem;
+  width: 3.3rem;
+  height: 3.3rem;
   z-index: 11;
 }
 
@@ -475,13 +475,13 @@ h3 {
   }
 
   50% {
-    width: 8rem;
-    height: 8rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   100% {
-    width: 6.6rem;
-    height: 6.6rem;
+    width: 3.3rem;
+    height: 3.3rem;
   }
 }
 
