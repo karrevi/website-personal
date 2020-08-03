@@ -1,5 +1,4 @@
 const spans = document.querySelectorAll('h1 span')
-let progress = document.getElementById('progressbar');
 let slider = document.querySelector('.slider-container');
 let sliderInd = document.querySelectorAll('.slider-test');
 let accountant = 1;
@@ -44,12 +43,6 @@ const showRequiredCategory = event => {
     getCategory.classList.remove('hideCategory')
     getCategory.classList.add('showCategory')
 }
-
-let totalHeight = document.body.scrollHeight - window.innerHeight;
-window.onscroll = function () {
-    let progressHeight = (window.pageYOffset / totalHeight) * 100;
-    progress.style.height = progressHeight + "%";
-};
 
 window.addEventListener("resize", function () {
     sizeWidth = sliderInd[0].clientWidth;
