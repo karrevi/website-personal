@@ -467,6 +467,23 @@ h3 {
   transform: translate(-50%, -50%) scale(1);
 }
 
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+
+  50% {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  100% {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+}
+
 @keyframes text {
   0% {
     color: black;
