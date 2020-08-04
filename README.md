@@ -37,4 +37,9 @@
   <img width="800" height="350" src="readmeImg/footer.gif">
 </p>
 
-# Construido con 
+# Construido con 🛠️
+
+* [Javascript](https://www.javascript.com/) - Lenguaje de programación para dar funcionalidad y manipular el DOM
+* [Animate.css](https://animate.style/) - Biblioteca de animación.
+* [Gsap](https://greensock.com/gsap/) - Animación Javascript para web.
+
